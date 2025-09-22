@@ -1,0 +1,359 @@
+body {
+  font-family: 'Fira Code', monospace !important;
+}
+
+.banner-heading,
+.banner-slogan,
+.banner-body {
+  text-shadow: 0 2px 8px rgba(21, 48, 97, 0.35);
+}
+
+.banner-slogan {
+  color: #f5f7fa;
+}
+
+.banner-slogan p {
+  font-size: 5rem; 
+  font-weight: 500;
+}
+#index_banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(rgba(21, 48, 97, 0.45), rgba(21, 48, 97, 0.45)),
+    url('../staticfiles/img/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  background-attachment: fixed; /* This keeps the image fixed while scrolling */
+
+  
+}
+#index_banner {
+  position: relative;
+  z-index: 1;
+  background-color: #210478;
+  height: 100vh;
+}
+
+.banner-content {
+  display: flex;
+  align-items: stretch; /* Ensures both columns are equal height */
+  width: 75%;
+}
+
+.banner-content > .w-50 {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  min-height: 100%;
+}
+
+.banner-button {
+ 
+  background-color: #5cc9a6;
+  color: #2a0286;
+  width: 20%;
+  border: none !important;
+  font-size: 1rem;
+                    
+}
+
+
+@media (max-width: 1269px) {
+  .banner-content {
+    width: 100%;
+    padding: 1rem !important;
+  }
+  .banner-content > .w-75 {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  .banner-slogan p {
+    font-size: 2.2rem !important;
+  }
+  .banner-body {
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+  .banner-button {
+    width: 60% !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-content {
+    width: 100%;
+    padding: 1rem !important;
+  }
+  .banner-content > .w-75 {
+    width: 100% !important;
+    padding: 1rem !important;
+  }
+  .banner-slogan p {
+    font-size: 2.2rem !important;
+  }
+  .banner-body {
+    font-size: 1rem !important;
+    width: 100% !important;
+  }
+  .banner-button {
+    width: 60% !important;
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-cat-wrapper {
+    padding: 0 !important;
+  }
+  .banner-content {
+    flex-direction: column;
+    width: 100%;
+    padding: 0.5rem !important;
+  }
+  .banner-content > .w-75 {
+    width: 100% !important;
+    padding: 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+  .banner-slogan p {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .banner-body {
+    font-size: 1rem !important;
+    width: 100% !important;
+    text-align: center;
+  }
+  .banner-button {
+    width: 80% !important;
+    font-size: 1rem !important;
+    margin: 0 auto;
+    display: block;
+  }
+  .banner-text {
+    padding: 0 !important;
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 575px) {
+  
+}
+/* Banner and Carousel Styles */
+.background {
+  width: 100%;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner-text {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-me {
+  display: flex;
+  height: 400px;
+}
+
+.why-me-content {
+  height: 39.4rem;
+  background-color: #2a02869f;
+  z-index: 2;
+  flex: 1;
+  position: relative;
+}
+.cat-wrapper {
+  flex: 1;
+  height: 43rem;
+  margin-top: -3.6rem; /* pull the video UP instead of down */
+  border-top-right-radius: 2rem;
+  background-image: url('../staticfiles/img/thumbnail.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+.cat-wrapper::before {
+  position: absolute;
+  content: '';
+  inset: 0;
+  background: rgba(29, 53, 92, 0.8);
+  border-top-right-radius: 2rem;
+}
+
+.why-me{
+  display: flex;
+  position: relative;
+  overflow: visible; /* allow overflow upward */
+  height: 39.4rem;
+}
+
+.btn-outline-light {
+    z-index: 2;
+}
+.why-me-header {
+  color: #f5f7fa;
+}
+
+@media (max-width: 1335px) {
+  .why-me{
+    display: flex !important;
+    flex-direction: column !important; /* stack vertically */
+    height: 100vh !important;
+  }
+
+  
+  .cat-wrapper {
+    position: relative !important;   /* remove absolute */
+    z-index: 2 !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-top-right-radius: 0rem !important;
+    
+  }
+
+  .cat-wrapper::before {
+    border-top-right-radius: 0rem !important;
+    
+  }
+
+  .why-me-content {
+    position: relative !important;   /* remove absolute */
+    z-index: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    border-top-right-radius: 0 !important;
+    padding: 1rem !important;
+    align-items: start !important;
+  }
+
+  .why-me-bullet {
+    font-size: 1rem !important;
+  }
+
+
+}
+
+@media (max-width: 760px) {
+  .why-me-bullet {
+    font-size: 0.875rem !important;
+  }
+}
+
+.dice-roller-section {
+  background:
+    linear-gradient(to bottom, rgba(124, 77, 231, 0.7), rgb(42, 2, 134));
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  padding: 4rem 2rem;  /* give breathing space */
+}
+
+.background {
+  width: 100%;
+  height: 60vh;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /* Add this */
+  justify-content: center; /* Optional: horizontal centering */
+}
+
+.why-me-bullet {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 1.1rem;
+  color: #f5f7fa;
+}
+
+
+
+.banner-nav {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.navbar-scrolled {
+  background-color: #2a0286 !important;
+  box-shadow: 0 2px 8px rgba(21, 48, 97, 0.15);
+  height: 65px;
+  padding: 0.6rem 0 0 0 !important;
+}
+
+.navbar-scrolled .logo {
+  max-height: 40px;
+  display: block;
+  width: auto;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px #2a0286; /* Example: white and blue glow */
+  border-color: #fff;
+}
+
+.navbar-collapse {
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+  max-height: 500px;
+  opacity: 1;
+}
+
+.navbar-collapse-enter-active,
+.navbar-collapse-leave-active {
+  transition: max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.53s;
+  overflow: hidden; /* keeps content from spilling out during transition */
+}
+
+/* ENTER */
+.navbar-collapse-enter-from {
+  max-height: 0;
+  opacity: 0;
+}
+.navbar-collapse-enter-to {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* LEAVE */
+.navbar-collapse-leave-from {
+  max-height: 500px;
+  opacity: 1;
+}
+.navbar-collapse-leave-to {
+  max-height: 0;
+  opacity: 0;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn-primary {
+  background-color: #2a0286 !important;
+  color: white !important;
+}
