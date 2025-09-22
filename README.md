@@ -73,7 +73,6 @@ This project consists of a Django backend and a Vue 3 frontend.
 ## Additional Notes
 
 - Make sure the backend server is running before using the frontend, as the frontend expects the API at `http://127.0.0.1:8000`.
-- If you add new Python packages, update `requirements.txt` with `pip freeze > requirements.txt`.
 - For any issues with CORS, ensure the backend `settings.py` has the correct `CORS_ALLOWED_ORIGINS`.
 
 ---
