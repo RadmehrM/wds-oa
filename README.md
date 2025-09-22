@@ -7,7 +7,7 @@ This project consists of a Django backend and a Vue 3 frontend.
 - Python 3.10+
 - Node.js 18+
 - npm (comes with Node.js)
-- [pipenv](https://pipenv.pypa.io/en/latest/) or `venv` and `pip`
+- venv
 - Git
 
 ---
@@ -16,7 +16,7 @@ This project consists of a Django backend and a Vue 3 frontend.
 
 1. **Clone the repository**  
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/RadmehrM/wds-oa.git
    cd wds-oa/backend
    ```
 
