@@ -66,7 +66,7 @@
             <input v-model="contact.name" type="text" placeholder="Your Name" required class="form-control mb-2" />
             <input v-model="contact.email" type="email" placeholder="Your Email" required class="form-control mb-2" />
             <textarea v-model="contact.message" placeholder="Your Message" required class="form-control mb-2"></textarea>
-            <button type="submit" class="btn btn-primary" @click="hideModal()">Send</button>
+            <button type="submit" class="btn btn-primary">Send</button>
             <button type="button" class="btn btn-secondary ms-2" @click="hideModal()">Close</button>
           </form>
         </div>
@@ -109,6 +109,8 @@ const submitContact = () => {
     .catch(() => {
       alert('Failed saving to database. Hint: Make sure to start up your backend server');
     });
+
+    hideModal()
 
 }
 
