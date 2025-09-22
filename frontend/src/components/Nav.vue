@@ -29,17 +29,17 @@
             >
           </li>
           <li class="nav-item align-self-center">
-            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" to="/"
+            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" :to="{ hash: '#why-me' }"
               >Why Me?</RouterLink
             >
           </li>
           <li class="nav-item align-self-center">
-            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" to="/Courses"
+            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" :to="{ hash: '#why-me' }"
               >Lucy Pictures</RouterLink
             >
           </li>
           <li class="nav-item align-self-center">
-            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" to="/facilities"
+            <RouterLink class="nav-link btn-outline-primary rounded-pill px-4" :to="{ hash: '#dice-roller' }"
               >Dice Roller</RouterLink
             >
           </li>

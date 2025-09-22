@@ -2,9 +2,14 @@
 
   <Banner />
 
-  <WhyMe />
-  
-  <DiceRoll />
+
+  <div id="why-me">
+    <WhyMe />
+  </div>
+
+  <div id="dice-roller">
+    <DiceRoll />
+  </div>
 
 </template>
 
