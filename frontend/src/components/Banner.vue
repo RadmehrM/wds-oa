@@ -10,19 +10,12 @@
             <div
                 class="banner-content text-left w-75 d-flex justify-content-center align-items-center m-0 pb-5"
             >
-                <div class="w-75 p-5 mb-2 pe-0 d-flex flex-column justify-content-end">
+                <div class="w-100 p-5 mb-2 pe-0 d-flex flex-column justify-content-end">
                 <div class="banner-slogan">
                     <p>
                     Welcome to My {{ currentPhrase }}
                     </p>
                 </div>
-                <a
-                    
-                    class="banner-button btn rounded-pill btn-primary btn-lg px-4"
-                    href="/about"
-                    role="button"
-                    >Discover More</a
-                >
                 </div>
             </div>
             </div>
